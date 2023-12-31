@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+
+</head>
+<body>
+	<div>
+		<form action="">
+			<fieldset>
+				<label>PERSON NAME</label>
+				<input type="text" id="un" placeholder="USERNAME" name="">
+				<br><br>
+				<button type="button" id="btn">CLICK ME</button>
+			</fieldset>
+		</form>
+	</div>
+	<div id="div1"></div>
+	<div>
+		
+		<script type="text/javascript">
+			let btn=document.getElementById("btn");
+			let div1=document.getElementById("div1");
+			let un=document.getElementById("un");
+			btn.addEventListener("click",ramesh);
+			function ramesh(){
+				let para=document.createElement("p");
+				let namePerson=un.value.toUpperCase();
+				para.innerHTML=`HELLO MY NAME IS ${namePerson}`;
+				div1.appendchild(para);
+				un.value=" ";}
+
+
+			
+
+		</script>
+	</div>
+
+</body>
+</html>
